@@ -6,26 +6,36 @@
 
 section {
     position: relative;
-    display: flex;
+    display: flex;  
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     overflow: hidden;
+    background-color: #000;
+}
+
+h2 {
+    color: #fff;
+    font-size: 70px;
+    margin-bottom: 20px;
 }
 
 .cursor {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #000;
+    width: 0px;
+    height: 0px;  
     border-radius: 50%;
+    box-shadow: 0px 0px 1px 1px rgba(247, 244, 244, 0.75),
+        inset 0px 0px 7px 0px rgba(0, 0, 0, 0.75);
     transition: .1s;
     transform: translate(-50%, -50%);
     cursor: none;
     pointer-events: none;
+    background: #fff;
+    mix-blend-mode: difference;
 }
 
 h2:hover~.cursor {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
