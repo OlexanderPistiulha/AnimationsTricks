@@ -17,6 +17,7 @@ body {
 }
 
 .conteiner {
+    width: 100%;
     display: flex;
     width: auto;
     justify-content: center;
@@ -33,6 +34,11 @@ body {
     overflow: hidden;
     border-radius: 2px;
     box-shadow: 0 20px 20px rgb(71, 71, 71);
+
+    @media screen and (max-width: 380px) {
+        width: 280px;
+        margin: 20px 5px;
+    }
 
     &__photo-wrapp {
         position: absolute;
@@ -98,4 +104,3 @@ body {
 .card:hover .card__photo-wrapp {
     color: rgb(63, 62, 62);
 }
-

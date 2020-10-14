@@ -31,6 +31,7 @@ body {
 }
 
 .conteiner {
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -59,6 +60,13 @@ body {
   border-radius: 2px;
   -webkit-box-shadow: 0 20px 20px #474747;
           box-shadow: 0 20px 20px #474747;
+}
+
+@media screen and (max-width: 380px) {
+  .card {
+    width: 280px;
+    margin: 20px 5px;
+  }
 }
 
 .card__photo-wrapp {

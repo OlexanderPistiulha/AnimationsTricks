@@ -63,6 +63,13 @@ body {
   transition: .5s;
 }
 
+@media screen and (max-width: 360px) {
+  .card {
+    width: 260px;
+    margin: 30px 10px;
+  }
+}
+
 .card__front {
   position: absolute;
   top: 0;
