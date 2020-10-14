@@ -28,6 +28,13 @@ section {
   height: 120px;
 }
 
+@media screen and (max-width: 800px) {
+  .loader {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .loader__item {
   position: absolute;
   top: 0;
@@ -67,6 +74,13 @@ section {
           animation-delay: calc(0.1s * var(--i));
 }
 
+@media screen and (max-width: 800px) {
+  .loader span::before {
+    width: 5px;
+    height: 5px;
+  }
+}
+
 .loader__rocket::before {
   content: '\f135';
   font-family: "fontAwesome";
@@ -77,6 +91,15 @@ section {
   font-size: 60px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+@media screen and (max-width: 800px) {
+  .loader__rocket::before {
+    top: 40px;
+    left: 45px;
+    color: #fff;
+    font-size: 30px;
+  }
 }
 
 @-webkit-keyframes animate {

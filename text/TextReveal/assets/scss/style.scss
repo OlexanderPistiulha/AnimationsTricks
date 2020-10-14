@@ -17,12 +17,14 @@ section {
     margin-bottom: 70px;
     text-align: center;
 
+    padding: 0 20px;
+
     span {
         display: inline-block;
         position: relative;
         opacity: 0;
         transition: 1s;
-        transform: translateY(100px);       
+        transform: translateY(100px);
         color: rgb(19, 21, 165);
     }
 }

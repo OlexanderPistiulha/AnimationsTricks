@@ -28,6 +28,23 @@ h2 {
   color: #fff;
   font-size: 70px;
   margin-bottom: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: none;
+}
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h2 {
+    font-size: 50px;
+  }
 }
 
 .cursor {

@@ -23,11 +23,37 @@ section {
   text-align: center;
 }
 
+@media screen and (max-width: 680px) {
+  .box {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .box {
+    width: 300px;
+    height: 70px;
+  }
+}
+
 .title {
   font-size: 4em;
   z-index: 1;
   color: #fff;
   line-height: 100px;
+}
+
+@media screen and (max-width: 680px) {
+  .title {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: 2em;
+    line-height: 70px;
+  }
 }
 
 .mask {

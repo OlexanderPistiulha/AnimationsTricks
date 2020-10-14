@@ -23,6 +23,7 @@ section {
 }
 
 .loader {
+  font-size: 14px;
   width: 200px;
   height: 200px;
   position: relative;
@@ -30,6 +31,15 @@ section {
   border-top: 18px solid #bdc72e;
   -webkit-animation: animate 2s linear infinite;
           animation: animate 2s linear infinite;
+}
+
+@media screen and (max-width: 800px) {
+  .loader {
+    width: 100px;
+    height: 100px;
+    border-top: 10px solid #bdc72e;
+    font-size: 10px;
+  }
 }
 
 .loader__loading {
@@ -63,16 +73,36 @@ section {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 800px) {
+  .loader::before,
+  .loader::after {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .loader::before {
   border-top: 18px solid #403eb4;
   -webkit-transform: rotate(130deg);
           transform: rotate(130deg);
 }
 
+@media screen and (max-width: 800px) {
+  .loader::before {
+    border-top: 10px solid #403eb4;
+  }
+}
+
 .loader::after {
   border-top: 18px solid #dd197b;
   -webkit-transform: rotate(230deg);
           transform: rotate(230deg);
+}
+
+@media screen and (max-width: 800px) {
+  .loader::after {
+    border-top: 10px solid #dd197b;
+  }
 }
 
 @-webkit-keyframes animate {

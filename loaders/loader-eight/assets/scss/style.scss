@@ -13,10 +13,14 @@ section {
 }
 
 .loader {
-
     position: relative;
     width: 120px;
     height: 120px;
+
+    @media screen and (max-width: 800px) {
+        width: 60px;
+        height: 60px;
+    }
 
     &__item {
         position: absolute;
@@ -40,6 +44,11 @@ section {
     transform: scale(0);
     animation: animate 2s linear infinite;
     animation-delay: calc(0.1s * var(--i));
+
+    @media screen and (max-width: 800px) {
+        width: 5px;
+        height: 5px;
+    }
 }
 
 @keyframes animate {

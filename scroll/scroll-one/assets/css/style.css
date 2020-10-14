@@ -78,4 +78,10 @@
   font-size: 18px;
   color: #fff;
 }
+
+@media screen and (max-width: 800px) {
+  .section__sybtittle {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

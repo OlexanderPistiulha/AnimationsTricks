@@ -23,6 +23,12 @@ section {
     margin: 0 10px;
     background: #2196f3;
     animation: animate 1.4s linear infinite;
+
+    @media screen and (max-width: 600px) {
+        width: 10px;
+        height: 50px;
+        animation: animatePhone 1.4s linear infinite;
+    }
 }
 
 .loader span {
@@ -33,7 +39,7 @@ section {
     0% {
         box-shadow: 0 0 0 rgba(0, 0, 0, .5);
         opacity: 0;
-        transform: translateX(-50px) scale(1);
+        transform: translateX(-50px) scale(1);      
     }
 
     50% {
@@ -46,5 +52,25 @@ section {
         box-shadow: 0 0 0 rgba(0, 0, 0, .5);
         opacity: 0;
         transform: translateX(50px) scale(1);
+    }
+}
+
+@keyframes animatePhone {
+    0% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, .5);
+        opacity: 0;
+        transform: translateX(-10px) scale(1);      
+    }
+
+    50% {
+        box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+        opacity: 1;
+        transform: translateX(0px) scale(1.2);
+    }
+
+    100% {
+        box-shadow: 0 0 0 rgba(0, 0, 0, .5);
+        opacity: 0;
+        transform: translateX(10px) scale(1);
     }
 }

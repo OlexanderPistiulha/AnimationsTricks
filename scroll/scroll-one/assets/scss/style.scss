@@ -75,5 +75,9 @@
         width: 40%;
         font-size: 18px;
         color: #fff;
+
+        @media screen and (max-width: 800px) {
+            width: 100%;
+        }
     }
 }
