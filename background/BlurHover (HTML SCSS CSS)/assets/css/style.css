@@ -27,6 +27,12 @@ body {
   transition: 1s;
 }
 
+@media screen and (max-width: 1000px) {
+  .conteiner__loyer-one {
+    width: 85%;
+  }
+}
+
 .conteiner__loyer-one:hover {
   opacity: 1;
   -webkit-box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);

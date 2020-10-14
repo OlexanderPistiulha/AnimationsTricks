@@ -16,11 +16,15 @@ body {
         transform: translate(-50%, -50%);
         background-image: url(../img/1.jpg);
         background-size: cover;
-         background-position: center;
+        background-position: center;
         width: 50%;
         height: 60%;
         z-index: 2;
         transition: 1s;
+
+        @media screen and (max-width: 1000px) {
+            width: 85%;
+        }
     }
 
     &__loyer-one:hover {

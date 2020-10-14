@@ -31,4 +31,18 @@ section {
   text-transform: uppercase;
   mix-blend-mode: overlay;
 }
+
+@media screen and (max-width: 1050px) {
+  .title {
+    font-size: 6rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
