@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.conteiner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.hexagon {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 10px 20px 10px 20px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.hexagon::before {
+  content: '';
+  position: absolute;
+  bottom: -70px;
+  width: 100%;
+  height: 60px;
+  background: radial-gradient(rgba(0, 0, 0, 0.15), transparent, transparent);
+  border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.hexagon:hover::before {
+  opacity: .8;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  background: radial-gradient(rgba(0, 0, 0, 0.2), transparent, transparent);
+}
+
+.hexagon:hover .shape {
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+.hexagon:hover .shape .blur {
+  width: 100%;
+  height: 100%;
+}
+
+.hexagon:hover .shape img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.hexagon:hover .content {
+  opacity: 1;
+}
+
+.shape {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 76%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 76%, 0 25%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.shape img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 76%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 76%, 0 25%);
+}
+
+.shape .content {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 3px;
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+/*# sourceMappingURL=style.css.map */
