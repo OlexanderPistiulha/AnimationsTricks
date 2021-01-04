@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;   
+}
+
+li {
+    list-style-type: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background-image: url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.conteiner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+
+    &:hover {
+        .content {
+            opacity: 1;
+        }
+
+        .img-box {
+            border: 5px solid rgba(253, 252, 252, .8);
+        }
+
+        .icons {
+            &__item {
+                transform: translateY(20px);
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.img-box {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid rgba(20, 20, 20, 0.20);
+    transition: .5s;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.content-box {
+    text-align: center;
+    margin: 20px;
+}
+
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    font-weight: 700;
+
+    span {
+        font-size: 16px;
+    }
+
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+
+    &__item {
+        margin: 0 10px;
+        transform: translateY(50px);
+        transition: .5s;
+        transition-delay: calc(0.1s * var(--i));
+        opacity: 0;
+    }
+
+    &__link {
+        color: #fff;
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+section {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  min-height: 100vh;
+  background-image: url(../img/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.conteiner {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  margin: 20px;
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.card:hover .content {
+  opacity: 1;
+}
+
+.card:hover .img-box {
+  border: 5px solid rgba(253, 252, 252, 0.8);
+}
+
+.card:hover .icons__item {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  opacity: 1;
+}
+
+.content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.img-box {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid rgba(20, 20, 20, 0.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content-box {
+  text-align: center;
+  margin: 20px;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.title span {
+  font-size: 16px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.icons__item {
+  margin: 0 10px;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-delay: calc(0.1s * var(--i));
+          transition-delay: calc(0.1s * var(--i));
+  opacity: 0;
+}
+
+.icons__link {
+  color: #fff;
+  font-size: 24px;
+}
+/*# sourceMappingURL=style.css.map */
