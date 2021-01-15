@@ -48,8 +48,8 @@ section {
   bottom: 0px;
   border: 2px #800080 solid;
   border-radius: 50%;
-  -webkit-animation: circleOuter 60s linear infinite;
-          animation: circleOuter 60s linear infinite;
+  -webkit-animation: circleOuter 40s linear infinite;
+          animation: circleOuter 40s linear infinite;
 }
 
 .circle__outer::before {
@@ -100,8 +100,8 @@ section {
   bottom: 110px;
   border: 2px #800080 solid;
   border-radius: 50%;
-  -webkit-animation: circleInner 50s linear infinite;
-          animation: circleInner 50s linear infinite;
+  -webkit-animation: circleInner 60s linear infinite;
+          animation: circleInner 60s linear infinite;
 }
 
 .circle__inner::before {
@@ -136,8 +136,8 @@ section {
             transform: rotate(45deg);
   }
   100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-transform: rotate(-315deg);
+            transform: rotate(-315deg);
   }
 }
 
@@ -147,8 +147,8 @@ section {
             transform: rotate(45deg);
   }
   100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-transform: rotate(-315deg);
+            transform: rotate(-315deg);
   }
 }
 
@@ -158,8 +158,8 @@ section {
             transform: rotate(120deg);
   }
   100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-transform: rotate(-240deg);
+            transform: rotate(-240deg);
   }
 }
 
@@ -169,8 +169,8 @@ section {
             transform: rotate(120deg);
   }
   100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-transform: rotate(-240deg);
+            transform: rotate(-240deg);
   }
 }
 
@@ -180,8 +180,8 @@ section {
             transform: rotate(290deg);
   }
   100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
   }
 }
 
@@ -191,8 +191,8 @@ section {
             transform: rotate(290deg);
   }
   100% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
+    -webkit-transform: rotate(-70deg);
+            transform: rotate(-70deg);
   }
 }
 /*# sourceMappingURL=style.css.map */

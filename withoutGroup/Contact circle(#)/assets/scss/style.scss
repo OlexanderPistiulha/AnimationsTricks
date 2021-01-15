@@ -40,7 +40,7 @@ section {
         bottom: 0px;
         border: 2px #800080 solid;
         border-radius: 50%;
-        animation: circleOuter 60s linear infinite;
+        animation: circleOuter 40s linear infinite;
 
         &::before {
             content: '';
@@ -89,7 +89,7 @@ section {
         bottom: 110px;
         border: 2px #800080 solid;
         border-radius: 50%;
-        animation: circleInner 50s linear infinite;
+        animation: circleInner 60s linear infinite;
 
         &::before {
             content: '';
@@ -127,7 +127,7 @@ section {
     }
 
     100% {
-        transform: rotate(-360deg);
+        transform: rotate(-315deg);
     }
 }
 
@@ -137,7 +137,7 @@ section {
     }
 
     100% {
-        transform: rotate(-360deg);
+        transform: rotate(-240deg);
     }
 }
 
@@ -147,6 +147,6 @@ section {
     }
 
     100% {
-        transform: rotate(-360deg);
+        transform: rotate(-70deg);
     }
 }
