@@ -46,24 +46,32 @@ section {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  border: 2px #800080 solid;
   border-radius: 50%;
   -webkit-animation: circleOuter 40s linear infinite;
           animation: circleOuter 40s linear infinite;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px #005ba1a5, inset 0px 0px 5px 0px #005ba1a5;
+          box-shadow: 0px 0px 5px 0px #005ba1a5, inset 0px 0px 5px 0px #005ba1a5;
 }
 
 .circle__outer::before {
   content: '';
   display: block;
   position: absolute;
+  background: #005aa1;
+  background-image: url(../img/gear.png);
+  background-position: center;
+  background-repeat: no-repeat;
   top: 0;
   left: 50%;
   width: 60px;
   height: 60px;
   -webkit-transform: translate(-25px, -50%);
           transform: translate(-25px, -50%);
-  background: #800080;
   border-radius: 50%;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px #005aa1;
+          box-shadow: 0px 0px 10px 0px #005aa1;
 }
 
 .circle__middle {
@@ -72,24 +80,32 @@ section {
   left: 55px;
   right: 55px;
   bottom: 55px;
-  border: 2px #800080 solid;
   border-radius: 50%;
   -webkit-animation: circleMiddle 55s linear infinite;
           animation: circleMiddle 55s linear infinite;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px #005ba1a5, inset 0px 0px 5px 0px #005ba1a5;
+          box-shadow: 0px 0px 5px 0px #005ba1a5, inset 0px 0px 5px 0px #005ba1a5;
 }
 
 .circle__middle::before {
   content: '';
   display: block;
   position: absolute;
+  background: #005aa1;
+  background-image: url(../img/mail.png);
+  background-position: center;
+  background-repeat: no-repeat;
   top: 0;
   left: 50%;
   width: 50px;
   height: 50px;
   -webkit-transform: translate(-25px, -50%);
           transform: translate(-25px, -50%);
-  background: #800080;
   border-radius: 50%;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0px 0px 10px 0px #005aa1;
+          box-shadow: 0px 0px 10px 0px #005aa1;
 }
 
 .circle__inner {
@@ -98,15 +114,21 @@ section {
   left: 110px;
   right: 110px;
   bottom: 110px;
-  border: 2px #800080 solid;
   border-radius: 50%;
   -webkit-animation: circleInner 60s linear infinite;
           animation: circleInner 60s linear infinite;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0px 0px 5px 0px #005ba1a5, inset 0px 0px 5px 0px #005ba1a5;
+          box-shadow: 0px 0px 5px 0px #005ba1a5, inset 0px 0px 5px 0px #005ba1a5;
 }
 
 .circle__inner::before {
   content: '';
   display: block;
+  background: #005aa1;
+  background-image: url(../img/phone.png);
+  background-position: center;
+  background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 50%;
@@ -114,8 +136,10 @@ section {
   height: 55px;
   -webkit-transform: translate(-25px, -50%);
           transform: translate(-25px, -50%);
-  background: #800080;
+  border: 2px solid #fff;
   border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 10px 0px #005aa1;
+          box-shadow: 0px 0px 10px 0px #005aa1;
 }
 
 .circle__fill {
@@ -126,8 +150,11 @@ section {
   background-size: cover;
   width: 110px;
   height: 110px;
-  background-color: #800080;
+  background-color: #005aa1;
+  border: 0;
   border-radius: 50%;
+  -webkit-animation: circleFill 2s linear infinite;
+          animation: circleFill 2s linear infinite;
 }
 
 @-webkit-keyframes circleOuter {
@@ -193,6 +220,36 @@ section {
   100% {
     -webkit-transform: rotate(-70deg);
             transform: rotate(-70deg);
+  }
+}
+
+@-webkit-keyframes circleFill {
+  0% {
+    -webkit-box-shadow: 0px 0px 10px 0px #005aa1;
+            box-shadow: 0px 0px 10px 0px #005aa1;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px 5px #005aa1;
+            box-shadow: 0px 0px 20px 5px #005aa1;
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 10px 0px #005aa1;
+            box-shadow: 0px 0px 10px 0px #005aa1;
+  }
+}
+
+@keyframes circleFill {
+  0% {
+    -webkit-box-shadow: 0px 0px 10px 0px #005aa1;
+            box-shadow: 0px 0px 10px 0px #005aa1;
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 20px 5px #005aa1;
+            box-shadow: 0px 0px 20px 5px #005aa1;
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 10px 0px #005aa1;
+            box-shadow: 0px 0px 10px 0px #005aa1;
   }
 }
 /*# sourceMappingURL=style.css.map */
