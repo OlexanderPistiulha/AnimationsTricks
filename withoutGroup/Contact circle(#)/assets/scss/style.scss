@@ -18,81 +18,132 @@ section {
     align-items: center;
     width: 420px;
     height: 420px;
-    border: 2px black solid;
     border-radius: 50%;
-    animation: circle 60s linear infinite;
 
-    span {
-        display: block;
+    // span {
+    //     display: block;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 50%;
+    //     width: 60px;
+    //     height: 60px;
+    //     transform: translate(-25px, -50%);
+    //     background: #800080;
+    //     border-radius: 50%;
+    // }
+
+    &__outer {
         position: absolute;
-        top: 0;
-        left: 50%;
-        width: 60px;
-        height: 60px;
-        transform: translate(-25px, -50%);
-        background: red;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        border: 2px #800080 solid;
         border-radius: 50%;
-    }
+        animation: circleOuter 60s linear infinite;
 
-    &__middle {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 310px;
-        height: 310px;
-        border: 2px black solid;
-        border-radius: 50%;     
-        animation: circle 55s linear infinite;
-
-        span {
-            // display: block;
-            // position: absolute;
-            // top: 0;
-            // left: 50%;
-            width: 50px;
-            height: 50px;
-            // transform: translate(-25px, -50%);
-            // background: red;
-            // border-radius: 50%;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 60px;
+            height: 60px;
+            transform: translate(-25px, -50%);
+            background: #800080;
+            border-radius: 50%;
         }
     }
 
-    &__inner {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 200px;
-        height: 200px;
-        border: 2px black solid;
-        border-radius: 50%;       
-        animation: circle 50s linear infinite;
+    &__middle {
+        position: absolute;
+        top: 55px;
+        left: 55px;
+        right: 55px;
+        bottom: 55px;
+        border: 2px #800080 solid;
+        border-radius: 50%;
+        animation: circleMiddle 55s linear infinite;
 
-        span {
-            // display: block;
-            // position: absolute;
-            // top: 0;
-            // left: 50%;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            transform: translate(-25px, -50%);
+            background: #800080;
+            border-radius: 50%;
+        }
+
+    }
+
+    &__inner {
+        position: absolute;
+        top: 110px;
+        left: 110px;
+        right: 110px;
+        bottom: 110px;
+        border: 2px #800080 solid;
+        border-radius: 50%;
+        animation: circleInner 50s linear infinite;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
             width: 55px;
             height: 55px;
-            // transform: translate(-25px, -50%);
-            // background: red;
-            // border-radius: 50%;
+            transform: translate(-25px, -50%);
+            background: #800080;
+            border-radius: 50%;
         }
     }
 
     &__fill {
+        position: relative;
+        background-image: url(../img/circle-fill.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         width: 110px;
         height: 110px;
-        background-color: #000;
+        background-color: #800080;
         border-radius: 50%;
+        // animation: circle 50s linear infinite reverse;
+
+
     }
 }
 
-@keyframes circle {
+@keyframes circleOuter {
     0% {
-       transform: rotate(0deg);
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes circleMiddle {
+    0% {
+        transform: rotate(120deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes circleInner {
+    0% {
+        transform: rotate(290deg);
     }
 
     100% {
