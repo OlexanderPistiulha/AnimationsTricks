@@ -40,6 +40,26 @@ section {
   border-radius: 50%;
 }
 
+.circle:hover .circle__outer {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.circle:hover .circle__middle {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.circle:hover .circle__inner {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.circle:hover .circle__fill {
+  width: 70px;
+  height: 70px;
+}
+
 .circle__outer {
   position: absolute;
   top: 0px;
@@ -47,8 +67,8 @@ section {
   right: 0px;
   bottom: 0px;
   border-radius: 50%;
-  -webkit-animation: circleOuter 40s linear infinite;
-          animation: circleOuter 40s linear infinite;
+  -webkit-animation: circleOuter 50s linear infinite;
+          animation: circleOuter 50s linear infinite;
   border: 2px solid #fff;
   -webkit-box-shadow: 0px 0px 5px 0px #005ba1a5, inset 0px 0px 5px 0px #005ba1a5;
           box-shadow: 0px 0px 5px 0px #005ba1a5, inset 0px 0px 5px 0px #005ba1a5;
@@ -72,6 +92,12 @@ section {
   border: 2px solid #fff;
   -webkit-box-shadow: 0px 0px 10px 0px #005aa1;
           box-shadow: 0px 0px 10px 0px #005aa1;
+  cursor: pointer;
+}
+
+.circle__outer::before:hover {
+  width: 70px;
+  height: 70px;
 }
 
 .circle__middle {
@@ -81,8 +107,8 @@ section {
   right: 55px;
   bottom: 55px;
   border-radius: 50%;
-  -webkit-animation: circleMiddle 55s linear infinite;
-          animation: circleMiddle 55s linear infinite;
+  -webkit-animation: circleMiddle 52s linear infinite;
+          animation: circleMiddle 52s linear infinite;
   border: 2px solid #fff;
   -webkit-box-shadow: 0px 0px 5px 0px #005ba1a5, inset 0px 0px 5px 0px #005ba1a5;
           box-shadow: 0px 0px 5px 0px #005ba1a5, inset 0px 0px 5px 0px #005ba1a5;
@@ -106,6 +132,7 @@ section {
   border: 2px solid #fff;
   -webkit-box-shadow: 0px 0px 10px 0px #005aa1;
           box-shadow: 0px 0px 10px 0px #005aa1;
+  cursor: pointer;
 }
 
 .circle__inner {
@@ -115,8 +142,8 @@ section {
   right: 110px;
   bottom: 110px;
   border-radius: 50%;
-  -webkit-animation: circleInner 60s linear infinite;
-          animation: circleInner 60s linear infinite;
+  -webkit-animation: circleInner 50s linear infinite;
+          animation: circleInner 50s linear infinite;
   border: 2px solid #fff;
   -webkit-box-shadow: 0px 0px 5px 0px #005ba1a5, inset 0px 0px 5px 0px #005ba1a5;
           box-shadow: 0px 0px 5px 0px #005ba1a5, inset 0px 0px 5px 0px #005ba1a5;
@@ -140,6 +167,7 @@ section {
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 10px 0px #005aa1;
           box-shadow: 0px 0px 10px 0px #005aa1;
+  cursor: pointer;
 }
 
 .circle__fill {
@@ -148,13 +176,15 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 110px;
-  height: 110px;
+  width: 90px;
+  height: 90px;
   background-color: #005aa1;
   border: 0;
   border-radius: 50%;
   -webkit-animation: circleFill 2s linear infinite;
           animation: circleFill 2s linear infinite;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 @-webkit-keyframes circleOuter {
