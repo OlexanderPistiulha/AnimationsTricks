@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    height: 420px;
+    border: 2px black solid;
+    border-radius: 50%;
+    animation: circle 60s linear infinite;
+
+    span {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        transform: translate(-25px, -50%);
+        background: red;
+        border-radius: 50%;
+    }
+
+    &__middle {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 310px;
+        height: 310px;
+        border: 2px black solid;
+        border-radius: 50%;     
+        animation: circle 55s linear infinite;
+
+        span {
+            // display: block;
+            // position: absolute;
+            // top: 0;
+            // left: 50%;
+            width: 50px;
+            height: 50px;
+            // transform: translate(-25px, -50%);
+            // background: red;
+            // border-radius: 50%;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        border: 2px black solid;
+        border-radius: 50%;       
+        animation: circle 50s linear infinite;
+
+        span {
+            // display: block;
+            // position: absolute;
+            // top: 0;
+            // left: 50%;
+            width: 55px;
+            height: 55px;
+            // transform: translate(-25px, -50%);
+            // background: red;
+            // border-radius: 50%;
+        }
+    }
+
+    &__fill {
+        width: 110px;
+        height: 110px;
+        background-color: #000;
+        border-radius: 50%;
+    }
+}
+
+@keyframes circle {
+    0% {
+       transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
